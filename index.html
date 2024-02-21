@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+       * {
+    margin: 0;
+    font-style: arial;
+    border: border-box;
+  }
+  .navbar {
+    height: 60px;
+    width: 100%;
+    background-color: rgb(1, 1, 22);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-logo {
+    height: 50px;
+    width: 100px;
+  }
+  .logo {
+    background-image: url("/amazon_logo.jpeg");
+    background-size: cover;
+    height: 50px;
+    width: 100%;
+  }
+  .border {
+    border: 1.5px solid transparent;
+  }
+  .border:hover {
+    border: 1.5px solid white;
+  }
+  .nav-location {
+    color: white;
+    margin-left: 15px;
+  }
+  .nav-loco {
+    font-size: 0.85rem;
+    color: #cccccc;
+  }
+  .nav-India {
+    font-size: 12px;
+    font-style: bold;
+  }
+  .search {
+    color: white;
+    background-color: #232f3e;
+    height: 40px;
+    width: 580px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: 15px;
+  }
+  .search-select {
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    border: none;
+    border: 1.5px solid transparent;
+  }
+  .search:hover {
+    border: 2px solid rgb(255, 208, 0);
+  }
+  .input {
+    width: 100%;
+    border: none;
+  }
+  .icon {
+    width: 50px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    background-color: rgb(255, 208, 0);
+  }
+  .enter {
+    color: #f3f3f3;
+    margin-left: 15px;
+  }
+  .sign {
+    font-size: 12px;
+  }
+  .account {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .shopping {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: baseline;
+  }
+  .shopping i {
+    font-size: 30px;
+  }
+  .navpannel {
+    background-color: #232f3e;
+    height: 45px;
+    width: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  .deals {
+    display: flex;
+    font-size: 0.85rem;
+    margin-left: 15px;
+  }
+  .deals a {
+    margin-left: 25px;
+  }
+  .shopcenter {
+    width: 80%;
+  }
+  .shopcenter p {
+    display: inline;
+    margin-left: 15px;
+  }
+  .hero-section {
+    background-image: url("/hero_image\(1\).jpeg");
+    background-size: cover;
+    height: 470px;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    align-items: flex-end;
+  }
+  
+  .hero-pannel {
+    height: 35px;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  .shopping {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .box {
+    background-color: white;
+    height: 400px;
+    width: 23%;
+    padding: 20px 0px 15px;
+    margin-bottom: 30px;
+  }
+  .box-img {
+    height: 300px;
+    background-size: cover;
+  }
+  .box-content {
+    color: black;
+    margin: 20px;
+  }
+  
+  .foot-pannel {
+    height: 70;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(1, 1, 22);
+    color: white;
+  }
+  .foot-pannel2 {
+    height: 500px;
+    width: 100%;
+    background-color: #232f3e;
+    color: #cccccc;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 14px;
+  }
+  .text {
+    font-size: 16px;
+    font-weight: bolder;
+    margin-bottom: 30px;
+  }
+  .foot-pannel2 p {
+    margin: 20px;
+  } 
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="nav-logo border">
+        <div class="logo"></div>
+      </div>
+
+      <div class="nav-location border">
+        <div class="nav-loco">Deliver to</div>
+        <div nav-India>
+          <i class="fa-solid fa-location-dot"></i>
+          India
+        </div>
+      </div>
+
+      <div class="search">
+        <select class="search-select">
+          <option>All</option>
+        </select>
+        <input placeholder="Search Amazon" class="input" />
+        <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+      </div>
+      <div class="enter border">
+        <p class="sign">Hello,Sign in</p>
+        <p class="account">Accounts & lists</p>
+      </div>
+      <div class="enter border">
+        <p class="sign">Returns</p>
+        <p class="account">& Orders</p>
+      </div>
+      <div class="shopping border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        Cart
+      </div>
+    </div>
+    <div class="navpannel">
+      <div class="deals">
+        <i class="fa-solid fa-bars"></i>
+        <a class="border">All</a>
+      </div>
+      <div class="shopcenter">
+        <p class="border">Customer Service</p>
+        <p class="border">Today's Deal</p>
+        <p class="border">Registry</p>
+        <p class="border">Gift Card</p>
+        <p class="border">Sell</p>
+      </div>
+      <div class="border">Shop Deals in Electronics</div>
+    </div>
+    <div class="hero-section">
+      <div class="hero-pannel">
+        <p>
+          You are at amazon.com. you can also shop on Amazon India for millions
+          of product with fast local delivery <a>Click here to on amazon.in</a>
+        </p>
+      </div>
+    </div>
+    <div class="shopping">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box1_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box2_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box3_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box4_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+    </div>
+    <div class="shopping">
+      <div class="box1 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box5_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box2 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box6_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box3 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box7_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+      <div class="box4 box">
+        <div class="box-content">
+          <h2>Health and personal care</h2>
+          <div
+            class="box-img"
+            style="background-image: url('/box8_image\(1\).jpeg')"
+          ></div>
+          <p>See more</p>
+        </div>
+      </div>
+    </div>
+    <div class="foot-pannel">
+      <span class="foot-items">Back to Top</span>
+    </div>
+    <div class="foot-pannel2">
+      <div class="aboutamazon1">
+        <p class="text">Get to Know Us</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Press Releases</p>
+        <p>Amazon Science</p>
+      </div>
+      <div class="aboutamazon2">
+        <p class="text">Connect with Us</p>
+        <p>Facebook</p>
+        <p>Facebook</p>
+        <p>Twitter</p>
+        <p>Instagram</p>
+      </div>
+      <div class="aboutamazon3">
+        <p class="text">Make Money with Us</p>
+        <p>Sell on Amazon</p>
+        <p>Sell under Amazon Accelerator</p>
+        <p>Protect and Build Your Brand</p>
+        <p>Amazon Global Selling</p>
+        <p>Become an Affiliate</p>
+        <p>Fulfilment by Amazon</p>
+        <p>Advertise Your Products</p>
+        <p>Amazon Pay on Merchants</p>
+      </div>
+      <div class="aboutamazon4">
+        <p class="text">Let Us Help</p>
+        <p>You COVID-19 and Amazon</p>
+        <p>Your Account Let Us Help You</p>
+        <p>COVID-19 and Amazon</p>
+        <p>Your Account</p>
+        <p>Returns Centre</p>
+        <p>100% Purchase Protection</p>
+        <p>Amazon App Download</p>
+        <p>Help</p>
+      </div>
+    </div>
+  </body>
+</html>
